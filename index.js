@@ -34,13 +34,13 @@ document.getElementById( "firstClass-minus").addEventListener("click", function 
 
 //total ticket cost calculate
 function totalTicketCost(){
-  const firstClassCount=getInputValue("firstClass-count");
-  const economyClassCount=getInputValue("economy-count");
-  const subTotalCount=firstClassCount*150+economyClassCount*100;
-  document.getElementById("subtotal-amount").innerText=subTotalCount;
-  const taxAmount=Math.round(subTotalCount/100*10);
+  const firstClassInput=getInputValue("firstClass-count");
+  const economyClassInput=getInputValue("economy-count");
+  const subTotalAmount=firstClassInput*150+economyClassInput*100;
+  document.getElementById("subtotal-amount").innerText=subTotalAmount;
+  const taxAmount=Math.round(subTotalAmount/100*10);
   document.getElementById("tax-amount").innerText=taxAmount;
-  const totalAmount=subTotalCount+taxAmount;
+  const totalAmount=subTotalAmount+taxAmount;
   document.getElementById("total-amount").innerText=totalAmount;
 
 
@@ -53,6 +53,8 @@ function getInputValue(id){
  
 
 }
+
+document.getElementById("booking-button").addEventListener("click",alert("Thank you Sir you are punched ticket"));
 
 
 

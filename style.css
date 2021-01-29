@@ -124,3 +124,10 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+
+#booking-button{
+    background-color:crimson;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
