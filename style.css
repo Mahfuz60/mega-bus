@@ -54,8 +54,15 @@ nav ul li a:hover, a.active{
     font-size: 70px;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
-    font-weight: 500;
+    font-weight: 600;
 }
+
+.booking-content p{
+    font-size:20px;
+    font-weight:400;
+    color: rgb(251, 253, 255);
+}
+
 .booking-form{
     background-color:rgb(63, 172, 172);
     border: 1px solid #ddd;
