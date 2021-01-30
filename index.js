@@ -60,9 +60,8 @@ document.getElementById("booking-button").addEventListener("click",function(){
   const firstClassTicket=getInputValue("firstClass-count");
   const economyClassTicket=getInputValue("economyClass-count");
   alert(
-    "Thank You Sir! You Have Booked " +
-    (firstClassTicket + economyClassTicket)+ "  Tickets  "+ " And Your Total Cost is:$ "
-    +document.getElementById("total-amount").innerText+" (only) "+" Hope You Enjoy Your  Beautiful Journey."
+    "Thank You Sir! You have booked  " +
+    (firstClassTicket + economyClassTicket)+ "  Tickets  "+ " and Your total cost is:  $ "+document.getElementById("total-amount").innerText+" (only) "+" hope you Enjoyable your Journey."
     
 
 

@@ -101,15 +101,19 @@ nav ul li a:hover, a.active{
 .inp-width{
     min-width: 100px;
 }
+
 .plus-minus-btn ,button{
     color: #1036f7;
-    font-size:20px;
+    font-size:25px;
     padding:4px;
     margin:5px ;
     word-spacing:10px;
     
 }
-
+.button-sign-minus{
+   
+    padding:1px 4px;
+}
 .btn-style{
     display: block;
     width: 100%;
