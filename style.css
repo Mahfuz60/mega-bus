@@ -129,7 +129,7 @@ nav ul li a:hover, a.active{
     border: none;
     color:#ddd;
     font-weight:600;
-    background-color:rgb(255, 3, 54);
+    background-color:darkorange;
 }
 .amount{
     display: flex;
