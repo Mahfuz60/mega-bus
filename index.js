@@ -25,17 +25,17 @@ document.getElementById( "firstClass-minus").addEventListener("click", function 
     
   });
 
-  document.getElementById("economy-plus").addEventListener("click", function () {
-      getFirstClassTicket("economy-count",true);
+  document.getElementById("economyClass-plus").addEventListener("click", function () {
+      getFirstClassTicket("economyClass-count",true);
   })
-  document.getElementById("economy-minus").addEventListener("click", function () {
-    getFirstClassTicket("economy-count",false);
+  document.getElementById("economyClass-minus").addEventListener("click", function () {
+    getFirstClassTicket("economyClass-count",false);
 })
 
 //total ticket cost calculate
 function totalTicketCost(){
   const firstClassInput=getInputValue("firstClass-count");
-  const economyClassInput=getInputValue("economy-count");
+  const economyClassInput=getInputValue("economyClass-count");
   const subTotalAmount=firstClassInput*150+economyClassInput*100;
   document.getElementById("subtotal-amount").innerText=subTotalAmount;
   const taxAmount=Math.round(subTotalAmount/100*10);
@@ -54,7 +54,20 @@ function getInputValue(id){
 
 }
 
-document.getElementById("booking-button").addEventListener("click",alert("Thank you Sir you are punched ticket"));
+//Button click Output
+
+document.getElementById("booking-button").addEventListener("click",function(){
+  const firstClassTicket=getInputValue("firstClass-count");
+  const economyClassTicket=getInputValue("economyClass-count");
+  alert(
+    "Thank You Sir! You Have Booked " +
+    (firstClassTicket + economyClassTicket)+ "  Tickets  "+ " And Your Total Cost is:$ "
+    +document.getElementById("total-amount").innerText+" (only) "+" Hope You Enjoy Your  Beautiful Journey."
+    
+
+
+  )
+});
 
 
 
